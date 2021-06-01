@@ -1,0 +1,62 @@
+footer.Container_big
+	.Footer
+		.Footer-block_1
+			.Footer-Logo
+				img(src="../../assets/images/logo_footer.svg", alt="logotype")
+			nav.Footer-Menu
+				ul.Footer-List
+					li.Footer-Item
+						a.Footer-Link(href='#') О нас
+					li.Footer-Item
+						a.Footer-Link(href='#') Проекты
+					li.Footer-Item
+						a.Footer-Link(href='#') Отзывы
+					li.Footer-Item
+						a.Footer-Link(href='#') Договор оферты
+					li.Footer-Item
+						a.Footer-Link(href='#') Договор подряда
+					li.Footer-Item
+						a.Footer-Link(href='#') Конфиденциальность
+					li.Footer-Item
+						a.Footer-Link(href='#') Партнерское соглашение
+			.Footer-Icons
+				.Footer-Icon
+				include ../svg/fb.svg
+				.Footer-Icon
+				include ../svg/ig.svg
+				.Footer-Icon
+				include ../svg/vk.svg
+		
+		.Footer-block_2
+			.Form
+				form#Form.Form-Body(action="#")
+					h1.Form-Title
+						| Оставить заявку
+					.Form-Item
+						label.Form-Label(for="formName")
+						input#formName.Form-Input._req(type="text" name="name" placeholder="Фамилия, имя и отчество*")
+					.Form-Item
+						label.Form-Label(for="formEmail")
+						input#formEmail.Form-Input._req._email(type="text" name="email" placeholder="E-mail*")
+					.Form-Item
+						label.Form-Label(for="formMessage")
+						textarea#formMassege.Form-Input(name="message",  cols="30", rows="10", placeholder="Сообщение")
+					.Form-Item
+						.Checkbox
+							input#formAgreement.Checkbox-Input._req(type="checkbox" name="agreement")
+							label.Checkbox-Label(for="formAgreement") Согласен на обработку данных
+					button(type="submit").Form-Button Отправить данные
+		
+		.Footer-block_3
+			p.Footer-Text
+				|	Высокий уровень вовлечения представителей целевой аудитории 
+				|	является четким доказательством простого факта: разбавленное изрядной 
+				|	долей эмпатии, рациональное мышление позволяет оценить значение модели развития.
+				|	Таким образом, консультация с широким активом обеспечивает широкому кругу 
+				|	(специалистов) участие в формировании стандартных подходов. 
+
+
+
+					
+					
+
