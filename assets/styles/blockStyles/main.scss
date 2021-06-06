@@ -196,8 +196,6 @@
     margin-bottom: 32px;
 }
 
-
-
 .Article_Text{
     max-width: 430px;
     margin-left: 60px;
@@ -231,11 +229,13 @@
 //! Табы на js
 .tabs-triggers{
 	display: flex;
+	flex-direction: row;
+	max-width: 500px;
 }
 
 .tab-triggers__item{
 	flex-grow: 1;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	font-family: Montserrat,sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -247,7 +247,9 @@
 		}
 }
 
-.tabs-content{}
+.tabs-content{
+	position: relative;
+}
 
 .tabs-content__item{
 	display: none;
@@ -257,6 +259,32 @@
 	max-width: 760px;
 	display: flex;
 	flex-direction: column;
+}
+
+.tab-title{
+	margin-bottom: 20px;
+	font-family: Montserrat,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+	color: #333333;
+}
+
+.tab-text{
+	font-family: Montserrat,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.6rem;
+	line-height: 3.2rem;
+	color: #333333;
+}
+
+.tab-img{
+	>img{
+		width: 870px;
+	}
+	margin-left: 140px;
 }
 
 .btn__more{
@@ -282,6 +310,14 @@
 		border: none;
 		cursor: pointer;	
 	}
+}
+
+.tab-btns{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
 }
 
 .btn__contract{
@@ -311,34 +347,6 @@
 	
 }
 
-.tab-title{
-	font-family: Montserrat,sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 2.4rem;
-	line-height: 3.2rem;
-	color: #333333;
-}
-
-.tab-text{
-	font-family: Montserrat,sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1.6rem;
-	line-height: 3.2rem;
-	color: #333333;
-}
-.tab-btns{
-	display: flex;
-	flex-direction: row;
-	margin-top: 70px;
-}
-.tab-img{
-	>img{
-		width: 870px;
-	}
-	margin-left: 140px;
-}
 
 
 .tabs-content__item--active{
