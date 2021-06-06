@@ -6,30 +6,12 @@
 .Part_Face{
   position: relative;
 }
-//* slider
-#viewport{
-    width: 100%;
+  //* slider
+.slideshow-container{
     position: absolute;
     top: 0;
     left: 0;
-    overflow: hidden;
-}
-
-#polosa{
-    position: relative;
-    width: 5310px;
-    &::after{
-        content: "";
-        display: block;
-        clear: both;
-    }
-}
-.slide{
-    >img{
-        float: left;    
-    }
-}
-
+} 
  
 .Face_Title{
     position: relative;

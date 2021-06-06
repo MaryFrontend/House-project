@@ -1,14 +1,32 @@
 "use strict"
 
-let sliderAutomatic = function(){ 
-    
- let slides = document.querySelectorAll(".slide");
- let sliders = [];
+let slideIndex = 1;
+showSlides(slideIndex);
 
- for (let i = 0; i<slides.length; i++){
-     sliders[i]=slides[i].querySelector('img');
- }
-
+function plusSlides(n){
+    showSlides(slideIndex += n);
 }
 
-sliderAutomatic();
+function currentSlide(n){
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+    let slides = document.getElementsByClassName('mySlides');
+    
+    if(n > slides.length){
+        slideIndex = 1;
+    }
+    // if (n < 1){
+    //     slideIndex = slides.length;
+    // }
+    for(let i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
+
+setInterval(function(){
+    slideIndex++;
+    showSlides(slideIndex);
+},3500);
